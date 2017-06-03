@@ -33,9 +33,10 @@ fieldset {
 }
 
 .login {
-  position: relative;
-  width: 350px;
-  display: none;
+	position: relative;
+	width: 350px;
+	display: none;
+	color: #FFF;
 }
 
 .arrow-up {

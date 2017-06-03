@@ -235,21 +235,45 @@
                             
 		  </div>
 		</div>
-		<form name="form1" method="post" action="">
-		  <p>&nbsp;</p>
-		  <p>
-		    <label for="Usuario" class="style1">Usuario</label>
-		    <input type="text" name="Usuario" id="Usuario">
-	      </p>
-		  <p>
-		    <label for="Contraseña">Contraseña</label>
-		    <input type="password" name="Contraseña" id="Contraseña">
-		  </p>
-		  <p>
-		    <input type="submit" name="Enviar" id="Enviar" value="Enviar">
-		  </p>
-    </form>
+	 
+
+
 
 		<!-- Header -->
+    <table width="200" border="0">
+          <tr>
+            <td><!-- Button to open the modal login form -->
+<button onclick="document.getElementById('id01').style.display='block'">Login</button>
+
+<!-- The Modal -->
+<div id="id01" class="modal">
+  <span onclick="document.getElementById('id01').style.display='none'"
+class="close" title="Close Modal">&times;</span>
+
+  <!-- Modal Content -->
+  <form class="modal-content animate" action="/action_page.php">
+    <div class="imgcontainer">
+      <img src="img_avatar2.png" alt="Inicio" class="avatar">
+    </div>
+
+    <div class="container">
+      <label><b>Usuario</b></label>
+      <input type="text" placeholder="Introduce Usario" name="uname" required>
+
+      <label><b>Password</b></label>
+      <input type="password" placeholder="Introduce Password" name="psw" required>
+
+      <button type="submit">Acceso</button>
+      <input type="checkbox" checked="checked"> Recordar
+    </div>
+
+    <div class="container" style="background-color:#f1f1f1">
+      <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
+      <span class="psw">Olvido <a href="#"> el password?</a></span>
+    </div>
+  </form>
+</div> </td>
+          </tr>
+    </table>
 </body>
 </html>

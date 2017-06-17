@@ -47,7 +47,9 @@
 	
 	em, i
 	{
-		font-style: italic;
+	font-style: italic;
+	font-family: "Arial Black", Gadget, sans-serif;
+	color: #FFF;
 	}
 
 	/* Don't forget to set this to something that matches the design */
@@ -1243,7 +1245,9 @@
 
  /* Bordered form */
 form {
-    border: 3px solid #f1f1f1;
+	border: 3px solid #f1f1f1;
+	font-family: "Arial Black", Gadget, sans-serif;
+	font-size: 12px;
 }
 
 /* Full-width inputs */

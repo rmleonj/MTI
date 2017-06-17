@@ -5,9 +5,12 @@
 		<meta http-equiv="content-type" content="text/html; charset=utf-8" />
 		<meta name="description" content="" />
 		<meta name="keywords" content="" />
-			
-	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<!-- Lo hace responsivo y los hace que se adapte a lo movil-->		
+	<meta name="viewport" content="width=device-width, initial-scale=1"> 
+	
 	<link rel="stylesheet" type="text/css" href="style.css">
+	
+	<link href="css/estilos.css" rel="stylesheet" type="text/css">
 
 		<link href='http://fonts.googleapis.com/css?family=Roboto+Condensed:700italic,400,300,700' rel='stylesheet' type='text/css'>
 		<!--[if lte IE 8]><script src="js/html5shiv.js"></script><![endif]-->
@@ -38,8 +41,7 @@
 	
 <a class="toggleMenu" href="#">Menu</a>
 <ul class="nav">
-	<li  class="test">
-		<a href="#">Administrador</a>
+	<li  class="test"><a href="#">Administrador</a>
 		<ul>
 			<li>
 				<a href="#">Administración de Operadores</a>
@@ -141,7 +143,7 @@
 	</li>
 	<li>
 	 <!-- Técnico -->
-                       <li class='active has-sub'><a href='#'><span>Técnico</span></a>
+    <li class='active has-sub'><a href='#'><span>Técnico</span></a>
                           <ul>
                             
                              <li class='has-sub'><a href='#'><span>Instalaciones</span></a>
@@ -171,11 +173,11 @@
                                   <li><a href='#'><span>Visor</span></a></li>
                   
                                 </ul>
-                             </li>
+                            </li>
                              
                           </ul>   
                             <!-- Ventas -->
-                       <li class='active has-sub'><a href='#'><span>Ventas</span></a>
+    <li class='active has-sub'><a href='#'><span>Ventas</span></a>
                           <ul>
                             
                              <li class='has-sub'><a href='#'><span>Catalogo de productos</span></a>
@@ -201,7 +203,7 @@
                           </ul>   
                           
                            <!-- Operadores -->
-                       <li class='active has-sub'><a href='#'><span>Operadores</span></a>
+    <li class='active has-sub'><a href='#'><span>Operadores</span></a>
                           <ul>
                             
                              <li class='has-sub'><a href='#'><span>Catalogo de productos</span></a>
@@ -230,21 +232,25 @@
                                  <li><a href='#'><span>Visor</span></a></li>
 
                                 </ul>
-                             </li>                      
+                            </li>                      
                              
                           </ul>   
                           
 		
 </ul>
-</div>
 
-<script type="text/javascript" src="http://code.jquery.com/jquery-1.7.2.min.js"></script>
-<script type="text/javascript" src="script.js"></script>
+   
 
 
-		<table width="423" height="143" border="0">
+		<p><img src="images/banner.jpg" width="500" height="168"></p>
+		
+		
+		
+		
+		
+		<table width="90" height="80" border="0">
           <tr>
-            <td><!-- Button to open the modal login form -->
+            <td width="84" height="76"><!-- Button to open the modal login form -->
 <button onclick="document.getElementById('id01').style.display='block'">
 
 <p>LOGIN</p>
@@ -261,7 +267,7 @@ class="close" title="Close Modal">&times;</span>
 
     <div class="container">
       <label><b>Usuario</b></label>
-      <input type="text" placeholder="Introduce Usario" name="uname" required>
+      <input  class="container" type="text" placeholder="Introduce Usuario" name="uname" required>
 
       <label><b>Password</b></label>
       <input type="password" placeholder="Introduce Password" name="psw" required>
@@ -278,6 +284,26 @@ class="close" title="Close Modal">&times;</span>
 </div> 
     </table>
 		<!-- Header -->
+    <script type="text/javascript" src="http://code.jquery.com/jquery-1.7.2.min.js"></script>
+<script type="text/javascript" src="script.js"></script>
+
+
+
+<div class="group">
+  <form action="registro.php" method="POST">
+  <h2 class="green"><em>Formulario de Registro</em></h2>
     
+      <label for="nombre">Nombre <span><em>(requerido)</em></span></label>
+      <input type="text" name="nombre" class="form-input" required/>   
+      
+      <label for="apellido">Apellido <span><em>(requerido)</em></span></label>
+      <input type="text" name="apellido" class="form-input" required/>         
+      
+      <label for="email">Email <span><em>(requerido)</em></span></label>
+      <input type="email" name="email" class="form-input" />
+     <center> <input class="form-btn" name="submit" type="submit" value="Suscribirse" /></center>
+    </p>
+  </form>
+</div>
 </body>
 </html>

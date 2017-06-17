@@ -1,5 +1,5 @@
 
-var ww = document.body.clientWidth;
+var ww = window.innerWidth
 
 $(document).ready(function() {
 	$(".nav li a").each(function() {
@@ -17,7 +17,7 @@ $(document).ready(function() {
 })
 
 $(window).bind('resize orientationchange', function() {
-	ww = document.body.clientWidth;
+	ww = window.innerWidth
 	adjustMenu();
 });
 
